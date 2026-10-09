@@ -1,0 +1,163 @@
+/* ==========================================
+   GENERAL PAGE / BODY
+   Affects: Whole admin dashboard background and font
+========================================== */
+html {
+    min-height: 100%;
+}
+
+body {
+    font-family: "Alan Sans", sans-serif;
+    /* Bulletproof fixed gradient background */
+    background: linear-gradient(to bottom, #ffffff, #ffffff, #ffffc1, #8ae13a) fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* ==========================================
+   NAVBAR BUTTONS
+   Affects: Back + Logout buttons
+========================================== */
+.top-navbar {
+    background: white;
+    padding: 15px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Logo only */
+.header-logo {
+    height: 60px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* Right controls */
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-back {
+    background: black;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+.btn-logout {
+    background: #dc2626;
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-weight: bold;
+}
+
+/* ==========================================
+   DASHBOARD LAYOUT CONTAINER
+   Affects: Page spacing and scroll wrapper
+========================================== */
+.dashboard-container {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 100%;
+    overflow-x: auto;
+}
+
+/* ==========================================
+   TABLE CARD WRAPPER
+   Affects: Card around table
+========================================== */
+.table-card {
+    background-color: transparent; /* Made transparent */
+    border-radius: 8px;
+    box-shadow: none; /* Removed shadow to blend with background */
+    overflow-x: auto;
+    padding: 10px;
+}
+
+/* ==========================================
+   TABLE STYLING
+   Affects: Entire data grid
+========================================== */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.75rem;
+    min-width: 2500px;
+    background-color: transparent; /* Made transparent */
+}
+
+/* Table headers */
+th {
+    background: #008F4D; /* Kept solid green for readability */
+    color: white;
+    padding: 10px 8px;
+    text-align: left;
+    font-weight: 600;
+    position: sticky;
+    top: 0;
+}
+
+/* Table cells */
+td {
+    background: transparent; /* Removed solid white background */
+    padding: 8px;
+    border-bottom: 1px solid black;
+    vertical-align: top;
+}
+
+/* Row hover effect */
+tr:hover td {
+    background: rgba(255, 255, 255, 0.4); /* Soft semi-transparent white on hover */
+}
+
+/* ==========================================
+   ACTION BUTTONS (EDIT / DELETE)
+   Affects: Row action links
+========================================== */
+.btn-action {
+    text-decoration: none;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 0.7rem;
+    margin-right: 5px;
+    display: inline-block;
+}
+
+/* Edit button */
+.btn-edit {
+    background: #e0f2fe;
+    color: #0369a1;
+}
+
+/* Delete button */
+.btn-delete {
+    background: #fee2e2;
+    color: #b91c1c;
+}
+
+/* Action cell layout */
+.action-cell {
+    white-space: nowrap;
+}
+
+/* ==========================================
+   EMPTY STATE
+   Affects: "No records found" message
+========================================== */
+.no-data {
+    text-align: center;
+    color: #64748b;
+    padding: 40px;
+}

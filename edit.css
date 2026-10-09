@@ -1,0 +1,188 @@
+/* ==========================================
+   GENERAL PAGE / BODY
+   Affects: Entire edit page layout and background
+========================================== */
+body {
+    font-family: "Alan Sans";
+    background-image: linear-gradient(#ffffff, #ffffff, #ffffc1, #8ae13a);
+    padding: 30px;
+}
+
+.top-navbar {
+  background: white;
+  padding: 15px 40px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
+}
+
+/* Logo only */
+.header-logo {
+  height: 60px; /* adjust size */
+  width: auto;
+  object-fit: contain;
+}
+/* ==========================================
+   MAIN EDIT CONTAINER
+   Affects: White form wrapper box
+========================================== */
+.edit-container {
+    max-width: 1000px;
+    background-color: transparent;
+    margin: 0 auto;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* ==========================================
+   PAGE TITLE
+========================================== */
+h2 {
+    color: #008F4D;
+    margin-top: 0;
+}
+
+/* ==========================================
+   PIN DISPLAY
+   Affects: Green PIN highlight box
+========================================== */
+.pin-display {
+    background: #e6f4ea;
+    padding: 10px 15px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    font-family: "Alan Sans";
+    font-size: 1.1rem;
+    color: #008F4D;
+}
+
+/* ==========================================
+   FORM GRID SYSTEM
+   Affects: All form layout structure
+========================================== */
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==========================================
+   LABELS
+========================================== */
+label {
+    font-size: 0.85rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    color: #334155;
+}
+
+/* ==========================================
+   INPUTS / SELECTS
+========================================== */
+input,
+select {
+    padding: 10px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    background-color: #f8fafc;
+}
+
+/* ==========================================
+   SECTION TITLE
+   Affects: "Existing Dependents", "Add New Dependents"
+========================================== */
+.section-title {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #008F4D;
+    margin: 20px 0 10px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+/* ==========================================
+   DEPENDENT CARD
+========================================== */
+.dependent-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+/* Header inside dependent card */
+.dependent-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+/* Save button */
+.btn-save {
+    background: #008F4D;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Cancel button */
+.btn-cancel {
+    background: #dc2626;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+}
+
+/* Add dependent button */
+.btn-add-dep {
+    background: #0284c7;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Remove dependent button */
+.btn-remove-dep {
+    background: #dc2626;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Button group */
+.btn-group {
+    margin-top: 30px;
+    display: flex;
+    gap: 10px;
+}

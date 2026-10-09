@@ -1,0 +1,141 @@
+/* ==========================================
+   GENERAL PAGE / BODY
+   Affects: Whole public registry page layout and background
+========================================== */
+body {
+    font-family: "Alan Sans", sans-serif;
+    background-image: linear-gradient(#ffffff, #ffffff, #ffffc1, #8ae13a);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    box-sizing: border-box; /* Ensures padding doesn't add extra height */
+    margin: 0;
+    padding: 40px 20px;
+}
+
+/* ==========================================
+   SEARCH CONTAINER
+   Affects: Main white search box
+========================================== */
+.search-container {
+    max-width: 750px;
+    background-color: white; /* Changed to white to match your screenshot */
+    margin: 20px auto;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+/* ==========================================
+   BACK LINK
+   Affects: "Return to Form" link
+========================================== */
+.back-home {
+    margin-bottom: 20px;
+    display: inline-block;
+    color: #008F4D;
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 0.9rem;
+}
+
+/* ==========================================
+   PAGE TITLE
+========================================== */
+h2 {
+    color: #008F4D;
+    margin-top: 0;
+    font-size: 1.4rem;
+}
+
+/* ==========================================
+   SEARCH BOX
+   Affects: Input + button container
+========================================== */
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 25px;
+}
+
+/* Input field */
+input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 4px;
+    font-size: 0.95rem;
+}
+
+/* Search button */
+button {
+    background: #008F4D;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #008F4D;
+}
+
+/* ==========================================
+   RESULT CARD
+   Affects: Each search result block
+========================================== */
+.result-card {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    padding: 20px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Result header row */
+.result-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #e2e8f0;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+/* PIN badge */
+.badge {
+    background: #e2e8f0;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #334155;
+}
+
+/* ==========================================
+   NO RESULT MESSAGE
+========================================== */
+.no-result {
+    color: #64748b;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ==========================================
+   PRIVACY NOTICE
+========================================== */
+.privacy-note {
+    background: #e6f4ea;
+    padding: 10px;
+    border-radius: 6px;
+    margin-top: 20px;
+    font-size: 0.8rem;
+    color: #008F4D;
+    text-align: center;
+}

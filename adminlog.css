@@ -1,0 +1,129 @@
+/* ==========================================
+   GENERAL PAGE / BODY
+   Affects: Whole login page layout and background
+========================================== */
+body {
+    font-family: "Alan Sans";
+    background-image: linear-gradient(#ffffff, #ffffff, #ffffc1, #8ae13a);
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin: 0;
+    padding: 20px;
+}
+
+/* ==========================================
+   LOGIN CONTAINER
+   Affects: White login card box
+========================================== */
+.login-container {
+    background-color: transparent;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* ==========================================
+   TITLE
+   Affects: "PhilHealth Portal Login"
+========================================== */
+h2 {
+    color: #008F4D;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+/* ==========================================
+   FORM GROUP
+   Affects: Each input block spacing
+========================================== */
+.form-group {
+    margin-bottom: 20px;
+}
+
+/* ==========================================
+   LABELS
+   Affects: Username / Password labels
+========================================== */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #334155;
+}
+
+/* ==========================================
+   INPUT FIELDS
+   Affects: Username & Password input boxes
+========================================== */
+input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* ==========================================
+   LOGIN BUTTON
+   Affects: Submit button
+========================================== */
+button {
+    width: 100%;
+    padding: 12px;
+    background: #008F4D;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #008F4D;
+}
+
+/* ==========================================
+   ERROR MESSAGE
+   Affects: Invalid login warning box
+========================================== */
+.error {
+    background: #fee2e2;
+    color: #b91c1c;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* ==========================================
+   BACK LINK SECTION
+   Affects: "Back to Registration Form"
+========================================== */
+.back-link {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.back-link a {
+    color: #008F4D;
+    text-decoration: none;
+}
+
+/* ==========================================
+   INFO TEXT
+   Affects: Footer note under login form
+========================================== */
+.info-text {
+    text-align: center;
+    font-size: 0.8rem;
+    color: #64748b;
+    margin-top: 15px;
+}
